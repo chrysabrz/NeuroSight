@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: neurosight
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run neurosight_dashboard_5.py --server.port=$PORT --server.address=0.0.0.0
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
