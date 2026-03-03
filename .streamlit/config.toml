@@ -1,0 +1,3 @@
+# Hide default sidebar nav (neurosight dashboard 5 / page names); we use custom "NeuroSight" + "Knowledge Base" links
+[client]
+showSidebarNavigation = false
