@@ -28,7 +28,7 @@ from itertools import accumulate
 # ─── Page Config (only when run standalone) ────────────────────────────────────
 
 if __name__ == "__main__":
-    st.set_page_config(page_title="NeuroSight Knowledge Base", page_icon="🧠", layout="wide")
+    st.set_page_config(page_title="NeuroSight Knowledge Base", page_icon="🧠", layout="wide", initial_sidebar_state="expanded")
 
 # ─── CSS is injected inside run_kb() so it fires every page load ─────────────
 
