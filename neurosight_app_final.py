@@ -593,7 +593,11 @@ section[data-testid="stSidebar"] nav a:last-of-type {
 h1,h2,h3{font-family:'Syne',sans-serif !important;color:#e8edf5 !important;}
 h1{color:#e8edf5 !important;}
 hr.ns{border:none;border-top:1px solid #1a2d4a;margin:16px 0;}
-header[data-testid="stHeader"]{background:transparent !important;height:0 !important;min-height:0 !important;visibility:hidden !important;}
+/* Keep header minimal but visible so sidebar expand/collapse still works */
+header[data-testid="stHeader"]{background:#060d1a !important;min-height:2.5rem !important;border-bottom:1px solid #1a2d4a !important;}
+[data-testid="stSidebar"] > div:first-child,
+[data-testid="collapsedControl"]{background:linear-gradient(180deg,#0a1628,#07101f) !important;border-right:1px solid #1a2d4a !important;}
+button[kind="header"]{color:#c8d8ee !important;}
 [data-testid="stMarkdown"] p{color:#c0d0e8 !important;}
 .stCaption,[data-testid="stCaptionContainer"]{color:#6a8caa !important;}
 [data-testid="stMetricValue"]{color:#e8edf5 !important;}

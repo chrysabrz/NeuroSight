@@ -87,7 +87,12 @@ h1,h2,h3{font-family:'Syne',sans-serif !important;}
 .tl-item{display:flex;gap:12px;margin-bottom:10px;font-size:.82rem;}
 .tl-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0;margin-top:4px;}
 hr.ns{border:none;border-top:1px solid #1a2d4a;margin:16px 0;}
-header[data-testid="stHeader"]{background:transparent !important;height:0 !important;min-height:0 !important;visibility:hidden !important;}
+/* Keep header minimal but visible so sidebar expand/collapse still works */
+header[data-testid="stHeader"]{background:#060d1a !important;min-height:2.5rem !important;border-bottom:1px solid #1a2d4a !important;}
+/* Collapsed sidebar: make the expand strip visible so user can click to reopen */
+[data-testid="stSidebar"] > div:first-child,
+[data-testid="collapsedControl"]{background:linear-gradient(180deg,#0a1628,#07101f) !important;border-right:1px solid #1a2d4a !important;}
+button[kind="header"]{color:#c8d8ee !important;}
 .ns-brand-title{font-family:'Syne',sans-serif !important;font-size:1.5rem !important;font-weight:800 !important;background:linear-gradient(90deg,#00c6ff,#7b2fff) !important;-webkit-background-clip:text !important;background-clip:text !important;-webkit-text-fill-color:transparent !important;color:transparent !important;}
 </style>
 """, unsafe_allow_html=True)
