@@ -1,0 +1,21 @@
+# Environment and secrets – never commit
+.env
+.env.local
+*.env
+
+# Checkpoint (resume state; can be large)
+neurosight_checkpoint.json
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+venv/
+.venv/
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
